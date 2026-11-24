@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Budget | FinBridge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <div class="logo-icon">₹</div>
+        <span>FinBridge</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="assistant.html">AI Assistant</a>
+        <a href="schemes.html">Schemes</a>
+        <a href="budget.html" class="active">Budget</a>
+        <a href="scam-checker.html">Scam Checker</a>
+    </nav>
+
+    <a href="assistant.html" class="nav-btn">
+        Get Started
+    </a>
+
+</header>
+
+
+<main class="app-page">
+
+    <div class="page-heading">
+
+        <div class="feature-icon">
+            %
+        </div>
+
+        <h1>Smart Budget Planner</h1>
+
+        <p>
+            Understand your income, expenses and monthly savings.
+        </p>
+
+    </div>
+
+
+    <div class="budget-layout">
+
+        <div class="budget-card">
+
+            <div class="card-title">
+                <h2>Monthly Financial Overview</h2>
+                <p>Enter your monthly income and expenses.</p>
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="income">
+                    Monthly Income
+                </label>
+
+                <div class="input-wrapper">
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="income"
+                        placeholder="25000"
+                        min="0"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="expenses">
+                    Monthly Expenses
+                </label>
+
+                <div class="input-wrapper">
+                    <span>₹</span>
+
+                    <input
+                        type="number"
+                        id="expenses"
+                        placeholder="18000"
+                        min="0"
+                    >
+                </div>
+
+            </div>
+
+
+            <button
+                class="primary-btn full-btn"
+                onclick="calculateBudget()"
+            >
+                Calculate My Budget
+            </button>
+
+
+            <div id="budgetError" class="error-message"></div>
+
+        </div>
+
+
+        <div class="budget-result-card">
+
+            <div class="result-header">
+                <span>Your Financial Summary</span>
+            </div>
+
+
+            <div class="result-main">
+
+                <small>Potential Monthly Savings</small>
+
+                <h2 id="savingsAmount">
+                    ₹0
+                </h2>
+
+                <span id="savingsMessage">
+                    Enter your income and expenses
+                </span>
+
+            </div>
+
+
+            <div class="result-details">
+
+                <div class="result-item">
+
+                    <span>Income</span>
+
+                    <strong id="resultIncome">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <span>Expenses</span>
+
+                    <strong id="resultExpenses">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div class="result-item">
+
+                    <span>Savings Rate</span>
+
+                    <strong id="savingsRate">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="budget-tip">
+
+                <strong>💡 Smart Tip</strong>
+
+                <p id="budgetTip">
+                    Try to keep a portion of your income aside for emergencies
+                    and future goals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>FinBridge</strong>
+
+        <p>
+            Bridging the gap to financial inclusion.
+        </p>
+    </div>
+
+    <span>
+        Hackathon 2026
+    </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

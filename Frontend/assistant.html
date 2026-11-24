@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | FinBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <div class="logo-icon">₹</div>
+        <span>FinBridge</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="assistant.html">AI Assistant</a>
+        <a href="schemes.html">Schemes</a>
+        <a href="budget.html">Budget</a>
+        <a href="scam-checker.html">Scam Checker</a>
+    </nav>
+
+</header>
+
+<main class="app-page">
+
+    <div class="page-heading">
+        <div class="feature-icon">AI</div>
+
+        <h1>AI Financial Assistant</h1>
+
+        <p>
+            Ask questions about savings, loans, insurance and financial planning.
+        </p>
+    </div>
+
+    <div class="chat-box">
+
+        <div class="messages">
+            <div class="message bot">
+                Hi! I'm your FinBridge AI Assistant. How can I help you?
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input
+                type="text"
+                id="userMessage"
+                placeholder="Ask a financial question..."
+            >
+
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

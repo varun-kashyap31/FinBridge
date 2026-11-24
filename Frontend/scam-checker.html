@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Scam Checker | FinBridge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <div class="logo-icon">
+            ₹
+        </div>
+
+        <span>
+            FinBridge
+        </span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="assistant.html">
+            AI Assistant
+        </a>
+
+        <a href="schemes.html">
+            Schemes
+        </a>
+
+        <a href="budget.html">
+            Budget
+        </a>
+
+        <a href="scam-checker.html" class="active">
+            Scam Checker
+        </a>
+
+    </nav>
+
+
+    <a href="assistant.html" class="nav-btn">
+        Get Started
+    </a>
+
+</header>
+
+
+
+<main class="app-page">
+
+
+    <div class="page-heading">
+
+        <div class="feature-icon">
+            ✓
+        </div>
+
+        <h1>
+            Financial Scam Checker
+        </h1>
+
+        <p>
+            Check suspicious financial messages and learn common scam warning signs.
+        </p>
+
+    </div>
+
+
+
+    <div class="checker-layout">
+
+
+        <div class="checker-card">
+
+
+            <div class="card-title">
+
+                <h2>
+                    Check a suspicious message
+                </h2>
+
+                <p>
+                    Paste a message, SMS or describe a financial situation.
+                </p>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="scamText">
+                    Message or situation
+                </label>
+
+                <textarea
+                    id="scamText"
+                    placeholder="Example: Your bank account will be blocked. Send your OTP immediately..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                class="primary-btn full-btn"
+                onclick="checkScam()"
+            >
+                Check Safety
+            </button>
+
+
+            <div id="scamError" class="error-message"></div>
+
+
+            <div
+                id="scamResult"
+                class="scam-result hidden"
+            >
+
+                <div class="result-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong id="scamTitle">
+                        Potential Risk Detected
+                    </strong>
+
+                    <p id="scamDescription">
+                        Be careful with this message.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="warning-card">
+
+            <div class="warning-header">
+
+                <div class="warning-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <h3>
+                        Common Warning Signs
+                    </h3>
+
+                    <p>
+                        Be careful if someone:
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <ul class="warning-list">
+
+                <li>
+                    <span>✓</span>
+                    Asks for your OTP or UPI PIN
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Creates urgent pressure
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Promises guaranteed returns
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Requests passwords or banking credentials
+                </li>
+
+                <li>
+                    <span>✓</span>
+                    Sends suspicious payment links
+                </li>
+
+            </ul>
+
+
+            <div class="safety-note">
+
+                <strong>
+                    Remember
+                </strong>
+
+                <p>
+                    Never share your OTP, PIN, password or banking credentials
+                    with anyone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+    <div>
+
+        <strong>
+            FinBridge
+        </strong>
+
+        <p>
+            Bridging the gap to financial inclusion.
+        </p>
+
+    </div>
+
+    <span>
+        Hackathon 2026
+    </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
